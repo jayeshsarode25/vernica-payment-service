@@ -8,6 +8,7 @@ dotenvconfig();
 const REQUIRED_VARS = [
   "MONGO_URI",
   "JWT_SECRET",
+  "COOKIE_DOMAIN",
   "RABBITMQ_URI",
   "RAZORPAY_KEY_ID",
   "RAZORPAY_KEY_SECRET",
@@ -25,6 +26,7 @@ if (missing.length > 0) {
 const _config = {
   MONGO_URI:           process.env.MONGO_URI,
   JWT_SECRET:          process.env.JWT_SECRET,
+  COOKIE_DOMAIN:       process.env.COOKIE_DOMAIN,
   RABBITMQ_URI:        process.env.RABBITMQ_URI,
   RAZORPAY_KEY_ID:     process.env.RAZORPAY_KEY_ID,
   RAZORPAY_KEY_SECRET: process.env.RAZORPAY_KEY_SECRET,
